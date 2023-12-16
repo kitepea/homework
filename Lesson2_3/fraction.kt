@@ -1,4 +1,4 @@
-package homework.Lesson2_3
+package Homework.Lesson2_3
 
 import kotlin.math.roundToInt
 import kotlin.math.roundToLong
