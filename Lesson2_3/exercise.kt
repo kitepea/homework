@@ -15,7 +15,7 @@ object StringOperationDelegates {
     fun uppercase(initial: String, locale: Locale = Locale.ROOT): ReadWriteProperty<Any?, String> =
         object : ReadWriteProperty<Any?, String> {
             // TODO: Implement the delegate
-            private var uppercaseValue: String = initial
+            private var uppercaseValue: String = initial.uppercase()
 
             // TODO: Implement the getValue
             override fun getValue(thisRef: Any?, property: KProperty<*>): String = uppercaseValue
@@ -31,7 +31,7 @@ object StringOperationDelegates {
      */
     fun trimmed(initial: String): ReadWriteProperty<Any?, String> = object : ReadWriteProperty<Any?, String> {
         // TODO: Implement the delegate
-        private var trimmedValue: String = initial
+        private var trimmedValue: String = initial.trim()
 
         // TODO: Implement the getValue
         override fun getValue(thisRef: Any?, property: KProperty<*>): String = trimmedValue
